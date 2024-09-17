@@ -117,7 +117,7 @@ button {
 }
 
 button:hover {
-  background-color: hsl(187, 24%, 22%);
+  background-color: hsl(188, 26%, 23%);
 }
 
 @media (max-width: 375px) {
