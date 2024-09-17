@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+main {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border: 1px solid hsl(169, 82%, 27%);
+}
+
+.name {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.query-option {
+  width: 100%;
+}
+
+.query-options {
+  display: flex;
+  gap: 20px;
+  margin: 1rem 0;
+}
+
+.query-option input[type="radio"] {
+  display: none;
+}
+
+.query-option label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem;
+  gap: 0.5rem;
+  border: 1px solid hsl(186, 15%, 59%);
+}
+
+.query-option label div {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked ~ label {
+  color: hsl(169, 82%, 27%);
+  border-color: hsl(169, 82%, 27%);
+  background-color: hsla(169, 82%, 27%, 0.1);
+}
+
+input[type="radio"]:checked ~ label div {
+  background-color: hsl(169, 82%, 27%);
+  border: 2px solid hsl(167, 33%, 77%);
+}
+
+.consent-container {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.consent-container label {
+  user-select: none;
+}
+
+button {
+  background-color: hsl(169, 82%, 27%);
+  color: White;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(187, 24%, 22%);
+}
+
+@media (max-width: 375px) {
+  .name {
+    display: block;
+  }
+
+  .query-options {
+    display: block;
+  }
+
+  .query-option {
+    margin-bottom: 0.5rem;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
